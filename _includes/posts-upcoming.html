@@ -1,0 +1,40 @@
+<!-- //  item -->
+{% for post in site.posts %}
+{% unless post.tag contains 'past' %}
+
+  <div class="col-md-6">
+    <div class="ticketBox" data-ticket-price="5000">
+      <div class="inactiveStatus"></div>
+
+      <div class="row">
+       <div class="col-xs-6">
+          <div class="ticket-name">{{ post.title }}<span>
+              {{ post.tagline }}<br>
+              Block {{ post.blocksize }}</span></div>
+          </div>
+
+       <div class="col-xs-6">
+        <div class="ticket-price-count-box">
+
+            <p class="price">ETA {{ post.eta | date: "%d %b %Y" }}</p>
+          </div>
+        </div>
+       </div>
+
+      <div class="ticket-description">
+        <p>
+          <strong>{{ post.title }}: </strong>
+          {{ post.desc }}
+        </p>
+        <div class="ticket-control">
+         <a class="btn" href="{{ post.url }}">
+           More >>
+         </a>
+        </div>
+      </div>
+
+      </div>
+      </div>
+      {% endunless %}
+      {% endfor %}
+      <!-- // end item -->

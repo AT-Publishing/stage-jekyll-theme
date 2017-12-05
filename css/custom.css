@@ -1,4 +1,4 @@
-/* Stage- Bootstrap one page Event ticket booking theme 
+/* Stage- Bootstrap one page Event ticket booking theme
 Created by pixpalette.com - online design magazine */
 
 @charset "utf-8";
@@ -25,7 +25,7 @@ a:hover, a:focus, a:active {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	line-height: 24px; 
+	line-height: 24px;
 }
 
 /* button style */
@@ -48,6 +48,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
     opacity: .5;
+}
+
+/* post */
+.post-content {
+	margin: 0 15px;
+  font-size: 16px;
+}
+.post-heading img {
+	display: block;
+	width: 100%;
+	max-width: 100%
 }
 
 /* form style */
@@ -110,7 +121,7 @@ label {
 .event-banner-wrapper {
 	position: fixed;
     width: 41.66666667%;
-    height: 100%;	
+    height: 100%;
     padding: 20px;
 	background: url(../images/event-banner.jpg);
 	background-position: center;
@@ -129,6 +140,19 @@ label {
     margin: 0;
     top: 20px;
     left: 20px;
+}
+
+.section-heading h2 {
+		position: relative;
+    font-family: 'Nixie One', sans-serif;
+    font-weight: 900;
+    line-height: 4.5vw;
+    color: inherit;
+    margin: 10px 0;
+    left: 15px;
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.5vw;
 }
 
 .event-banner-wrapper h2 {
@@ -167,7 +191,7 @@ label {
 }
 
 /* event ticket css */
-.event-ticket-wrapper{	
+.event-ticket-wrapper{
     padding: 40px;
 }
 
@@ -183,7 +207,8 @@ label {
     z-index: 99;
 }
 
-.event-tab .nav-tabs > li > a {
+.event-tab .nav-tabs > li > a,
+a.internal-post {
     font-size: 18px;
 	color: rgba(0, 0, 0, 0.28);
     margin-right: 30px;
@@ -194,10 +219,12 @@ label {
 }
 
 .event-tab .nav-tabs > li.active > a,
-.event-tab .nav-tabs > li.active > a:hover, 
+.event-tab .nav-tabs > li.active > a:hover,
 .event-tab .nav-tabs > li.active > a:focus,
-.event-tab .nav-tabs > li > a:hover, 
-.event-tab .nav-tabs > li > a:focus {
+.event-tab .nav-tabs > li > a:hover,
+.event-tab .nav-tabs > li > a:focus,
+a.internal-post:hover,
+a.internal-post:focus {
 	background: transparent;
     color: #000000;
     border: 1px solid transparent;
@@ -258,7 +285,7 @@ label {
     width: 100%;
     text-align: right;
 }
- 
+
 .ticketBox .ticket-price-count-box .ticket-control {
 	float: right;
     width: 120px;
@@ -458,11 +485,11 @@ iframe {
 		overflow-y: auto;
 		border: 0;
 	}
-	
+
 	.modal.right .modal-body {
 		padding: 30px;
 	}
-    
+
 	.modal.right.fade .modal-dialog {
 		right: -320px;
 		-webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
@@ -470,7 +497,7 @@ iframe {
 		     -o-transition: opacity 0.3s linear, right 0.3s ease-out;
 		        transition: opacity 0.3s linear, right 0.3s ease-out;
 	}
-	
+
 	.modal.right.fade.in .modal-dialog {
 		right: 0;
 	}
@@ -553,4 +580,3 @@ iframe {
 }
 
 }
-

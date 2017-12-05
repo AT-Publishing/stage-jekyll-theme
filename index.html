@@ -7,43 +7,23 @@ layout: default
   <div role="tabpanel" class="tab-pane fade in active" id="buyTicket">
     <div class="row">
 
-  <!-- //  item -->
-  {% for post in site.posts %}
-    <div class="col-md-6">
-      <div class="ticketBox" data-ticket-price="5000">
-        <div class="inactiveStatus"></div>
+      {% include posts-upcoming.html %}
 
-        <div class="row">
- 			   <div class="col-xs-6">
-            <div class="ticket-name">{{ post.title }}<span>
-                {{ post.tagline }}<br>
-                Block {{ post.blocksize }}</span></div>
-            </div>
+         <section class="banner">
+           {{ site.ad.ledger }}
+         </section>
 
-         <div class="col-xs-6">
-          <div class="ticket-price-count-box">
+       </div>
+       <div class="row">
 
-              <p class="price">ETA {{ post.eta | date: "%d %b %Y" }}</p>
-            </div>
-          </div>
+         <div class="section-heading ">
+           <h2>
+               Past Bitcoin Forks
+           </h2>
          </div>
 
-        <div class="ticket-description">
-          <p>
-            <strong>{{ post.title }}: </strong>
-            {{ post.desc }}
-          </p>
-          <div class="ticket-control">
-           <a href="{{ post.url }}">
-             More >>
-           </a>
-          </div>
-        </div>
+         {% include posts-past.html %}
 
-        </div>
-        </div>
-        {% endfor %}
-        <!-- // end item -->
 
 
 
@@ -51,68 +31,13 @@ layout: default
 </div>
 
 
-  <div role="tabpanel" class="tab-pane fade" id="venue">
-                    	<h4> Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do eiusmod<br> Pune 411058</h4><br>
-                        <iframe src="https://www.google.com/maps/d/embed?mid=1UMEBYRnM0KZhrhqikVv3YigwUd0" width="640" height="300"></iframe>
+  <div role="tabpanel" class="tab-pane fade" id="about">
+    {% include about.html %}
   </div>
 
   <div role="tabpanel" class="tab-pane fade" id="termCondition">
-           				       <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
-                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+    {% include tc.html %}
   </div>
 
  </div>
-</div>
-
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-<!-- Modal -->
-<div class="modal right fade" id="ticket-details" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <!--<div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Share your contact Details</h4>
-      </div>-->
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-        	<img src="images/icons/cancel.png">
-        </button>
-        <h4 class="modal-title">Your Tickets</h4>
-      </div>
-      <div class="modal-body">
-
-        <div class="cart-information">
-            	<div class="ticket-type"></div>
-          		<ul>
-	                <li>Tickets: <span class="ticket-count"></span></li>
-                    <li>Price: <span class="ticket-amount"></span></li>
-                    <hr>
-                    <li>Total: <span class="total-amount"></span></li>
-    			</ul>
-            </div>
-
-            <div class="contactForm">
-                <h3>Share your contact Details</h3>
-                <form>
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter your name">
-                  </div>
-
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Enter your Email ID">
-                  </div>
-
-                  <div class="form-group">
-                     <input type="text" class="form-control" placeholder="Enter your Mobile No.">
-                  </div>
-
-        		  <a type="submit" class="btn">Proceed to Payment</a>
-                </form>
-            </div>
+ <!-- // Tab panes -->

@@ -2,6 +2,7 @@
 baseurl: ""
 url: "https://example.com"
 title: "Stage Jekyll Theme"
+tagline: "Some<br>Tag Line"
 
 defaults:
  -
@@ -13,3 +14,7 @@ defaults:
       permalink: /:permalink
       published: true
       author: "myname"
+
+ad:
+  bitfinex: '<a rel="nofollow" target="_blank" href="https://www.bitfinex.com/?refcode=5egV78YtlC"><img src="https://gallery.mailchimp.com/b5cca524e997c8e12f8ad51e1/images/d928b3bc-d245-4039-bdb0-e668b0372114.jpg"></a><br>'
+  ledger: '<a rel="nofollow" target="_blank" href="https://www.ledgerwallet.com/r/e274"><img alt="Ledger Wallet protects your bitcoins" src="/ads/ledger.gif"></a><br>'
