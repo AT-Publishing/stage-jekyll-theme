@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+  <body>
+
+    <div class="loader">
+       <div>
+        <img src="/images/icons/preloader.gif" />
+       </div>
+    </div>
+
+    <div class="container-fluid">
+		<div class="row">
+
+          {% include sidebar.html %}
+
+            <div class="col-sm-7 right-wrapper">
+            	<div class="event-ticket-wrapper">
+
+                <div class="event-tab">
+
+                  {% include nav.html %}
+
+                  {{ content }}
+
+                  <!-- Post panes -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="buyTicket">
+                    	<div class="row">
+
+                          <div class="col-md-6">
+                            	<div class="ticketBox" data-ticket-price="50000">
+                                	<div class="inactiveStatus"></div>
+
+                                    <div class="row">
+ 			                       	<div class="col-xs-6">
+            							<div class="ticket-name">
+                                        	Platinum
+                                            <span>Standing<br>
+                                        	1 Ticket for 1 person</span>
+                                        </div>
+            						</div>
+
+                                    <div class="col-xs-6">
+            							<div class="ticket-price-count-box">
+                                            <div class="ticket-control">
+                                                <div class="input-group">
+                                                  <span class="input-group-btn">
+                                                      <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                                          <span class="glyphicon glyphicon-minus"></span>
+                                                      </button>
+                                                  </span>
+                                                  <input type="text" name="quant[1]" class="form-control input-number" value="0" min="0" max="10">
+                                                  <span class="input-group-btn">
+                                                      <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                                          <span class="glyphicon glyphicon-plus"></span>
+                                                      </button>
+                                                  </span>
+                                                </div>
+                                            </div>
+                                            <p class="price">Rs.50000</p>
+                                        </div>
+            						</div>
+                                    </div>
+
+
+                                    <div class="ticket-description">
+                                    	<p><strong>Please refer Venue Plan:</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- END Post panes -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+    {% include footer.html %}
+  </body>
+</html>

@@ -1,0 +1,15 @@
+# SITE CONFIGURATION
+baseurl: ""
+url: "https://example.com"
+title: "Stage Jekyll Theme"
+
+defaults:
+ -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: /:permalink
+      published: true
+      author: "myname"
