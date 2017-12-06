@@ -4,7 +4,7 @@ published: true
 
 layout: post
 title: Bitcoin Cash Plus
-permalink: bcash-plus
+permalink: bcash-plus/
 
 tag: 'upcoming'
 
