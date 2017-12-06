@@ -23,7 +23,55 @@ layout: default
               {% endif %}
             </div>
 
+            <p>
+              <blockquote>"{{ page.tagline }}"</blockquote>
+            </p>
+            {% if page.tag contains 'past' %}
+            <p>
+              <strong>Fork Executed: </strong>
+              &nbsp;{{ page.executed | date: "%d %b %Y" }}
+            </p>
+            {% endif %}
+            <p>
+              <strong>Blocksize at split: </strong>
+              &nbsp;{{ page.blocksize }}
+            </p>
+            <p>
+              <strong>Fork ETA: </strong>
+              &nbsp;{{ page.eta | date: "%d %b %Y" }}
+            </p>
+            <p>
+              <strong>Replay Protection: </strong>
+              &nbsp;{{ page.rp }}
+            </p>
+            <p>
+              <strong>Forked Coin Granting by Exchanges: </strong>
+              &nbsp;{{ page.granted }}
+            </p>
+            <p>
+              <strong>Forked Coin Wallets: </strong>
+              {% for wallet in page.wallets %}
+              <br>&nbsp;-&nbsp;<a target="_blank" rel="nofollow" href="{{ wallet.url }}">{{ wallet.name }}</a>
+              {% endfor %}
+            </p>
+
+
+
+            <p>
+              <strong>Official Website:</strong>
+               &nbsp;<a rel="nofollow" target="_blank" href="{{ page.official }}">{{ page.official }}</a>
+            </p>
+
+            <p>
+              <strong>Team:</strong>
+              &nbsp;{{ page.team }}
+            </p>
+
+            <hr>
+
             {{ content }}
+
+
           </div>
         </div>
       </section>

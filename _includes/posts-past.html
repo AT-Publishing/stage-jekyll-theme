@@ -10,13 +10,13 @@
        <div class="col-xs-6">
           <div class="ticket-name">{{ post.title }}<span>
               {{ post.tagline }}<br>
-              Block {{ post.blocksize }}</span></div>
+              <strong>Block</strong> {{ post.blocksize }}</span></div>
           </div>
 
        <div class="col-xs-6">
         <div class="ticket-price-count-box">
 
-            <p class="price">ETA {{ post.eta | date: "%d %b %Y" }}</p>
+            <p class="price">Forked {{ post.executed | date: "%d %b %Y" }}</p>
           </div>
         </div>
        </div>

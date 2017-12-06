@@ -1,6 +1,6 @@
 <!-- //  item -->
 {% for post in site.posts %}
-{% unless post.tag contains 'past' %}
+{% if post.tag contains 'upcoming' %}
 
   <div class="col-md-6">
     <div class="ticketBox" data-ticket-price="5000">
@@ -10,7 +10,7 @@
        <div class="col-xs-6">
           <div class="ticket-name">{{ post.title }}<span>
               {{ post.tagline }}<br>
-              Block {{ post.blocksize }}</span></div>
+              <strong>Block</strong> {{ post.blocksize }}</span></div>
           </div>
 
        <div class="col-xs-6">
@@ -35,6 +35,6 @@
 
       </div>
       </div>
-      {% endunless %}
+      {% endif %}
       {% endfor %}
       <!-- // end item -->
