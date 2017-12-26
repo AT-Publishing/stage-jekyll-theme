@@ -33,7 +33,7 @@ layout: default
             </p>
             {% endif %}
             <p>
-              <strong>Blocksize at split: </strong>
+              <strong>Block Nr. at Split: </strong>
               &nbsp;{{ page.blocksize }}
             </p>
             <p>
@@ -51,7 +51,7 @@ layout: default
             <p>
               <strong>Forked Coin Wallets: </strong>
               {% for wallet in page.wallets %}
-              <br>&nbsp;-&nbsp;<a target="_blank" rel="nofollow" href="{{ wallet.url }}">{{ wallet.name }}</a>
+              <br>&nbsp;-&nbsp;<a target="_blank" rel="nofollow" href="{{ wallet.url }}?utm_source=forkitinfo">{{ wallet.name }}</a>
               {% endfor %}
             </p>
 
@@ -59,7 +59,7 @@ layout: default
 
             <p>
               <strong>Official Website:</strong>
-               &nbsp;<a rel="nofollow" target="_blank" href="{{ page.official }}">{{ page.official }}</a>
+               &nbsp;<a rel="nofollow" target="_blank" href="{{ page.official }}?utm_source=forkitinfo">{{ page.official }}</a>
             </p>
 
             <p>
@@ -93,7 +93,7 @@ layout: default
  <!-- // Tab panes -->
 
  <section class="banner">
-   {{ site.ad.bitfinex }}
+   {{ site.ad.ledger }}
  </section>
 
 

@@ -4,6 +4,9 @@ url: "https://forkit.info"
 title: "Fork It"
 tagline: "Bitcoin Forks<br>Upcoming & Past"
 
+timezone: "Etc/GMT"
+
+
 defaults:
  -
     scope:
