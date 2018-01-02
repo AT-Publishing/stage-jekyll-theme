@@ -6,13 +6,13 @@ layout: post
 title: SegWit2X
 permalink: segwit2x/
 
-tag: 'upcoming'
+tag: 'past'
 
 date: 2017-12-25 01:45 +0100
-update: 2017-12-25 01:45 +0100
+update: 2018-01-01 01:45 +0100
 
-eta: 2017-12-28 12:00 +0000
-#executed: 2017-12-12 12:00 +0000
+#eta: 2017-12-28 12:00 +0000
+executed: 2017-12-28 12:00 +0000
 
 tagline: "SegWit2x born again."
 blocksize: 501451
