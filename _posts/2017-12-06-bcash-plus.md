@@ -6,13 +6,13 @@ layout: post
 title: Bitcoin Cash Plus
 permalink: bcash-plus/
 
-tag: 'upcoming'
+tag: 'past'
 
 date: 2017-12-06 13:45 +0700
 update: 2017-12-06 18:45 +0700
 
 eta: 2018-01-02 07:00 +0000
-#executed: 2017-12-12 18:45 +0700
+executed: 2018-01-02 07:00 +0000
 
 tagline: "On-chain scaling, SigHash for better security, EDA."
 blocksize: 501407
